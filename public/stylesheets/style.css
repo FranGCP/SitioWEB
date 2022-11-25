@@ -1,8 +1,527 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Reglas Generales */
+* {
+    font-family: 'Gothic A1', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 175, 28);
+}
+/* Fin Reglas Generales */
+
+/* Header */
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+header .logo{
+    display: flex;
+    justify-content: left;
+}
+header .logo img{
+    width: 5em;
+}
+/* Fin Header */
+
+/* Barra de Navegacion */
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    height: 4em;
+    z-index: 99999;
+
+}
+nav .barra{
+    width: 100%;
+    padding: 0px 10px;
+}
+nav .barra ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    text-decoration: none;
+    color: orange;
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    width: 60px;
+}
+nav li p{
+    padding-top: 3px;
+    margin: 0;
+    font-weight: bold;
+}
+nav li img{
+    width: 6em;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+nav li:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    color: rgb(252, 192, 80);
+}
+/* Fin barra de Navegacion */
+
+/* Carrusel */
+.cimg{
+    width: 100%;
+}
+/* Carrusel */
+
+/* Main */
+main{
+    margin-bottom: 4em;
+    background-color: rgb(255, 175, 28);
+}
+.titulog{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding: 20px 20px;
+    margin: 0;
+
+}
+.titulog span{
+    color: orange;
+    font-style: italic;
+}
+.titulog h2{
+    margin: 0px;
+}
+.textg{
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+/* Presentacion Style */
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    margin: 30px 0px 0px 20px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 20px 10px rgb(30, 30, 30);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 10px orange double;
+    border-right: 0px;
+}
+/* Presentacion Style */
+/* Conocenos Style */
+.conocenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    margin: 40px 20px 0px 0px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 20px 10px rgb(30, 30, 30);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 10px orange double;
+    border-left: 0px;
+}
+/* Conocenos Style */
+/* Trabajos Style */
+.trabajos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px 10px rgb(30, 30, 30);
+}
+.fotog{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px black double   ;
+}
+.fotos:hover{
+    transform: scale(1.05);
+    transition: .3s ease;
+
 }
 
-a {
-  color: #00B7FF;
+/* Trabajos Style */
+/* Seccion Nosotros */
+.info01{
+    background-color: rgb(30, 30, 30);
+    margin-top: 50px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 10px orange double;
+    border-left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    color: whitesmoke;
 }
+.info01 h3{
+    color: orange;
+}
+.equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(30, 30, 30);
+    color: orange;
+    border: 10px orange double;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    margin: 50px;
+}
+.equipo h2{
+    margin: 0px;
+}
+
+.nosotros01{
+    width: 100%;
+    display: flex;
+    background-image: url(https://via.placeholder.com/1500);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    box-shadow: inset 0px 0px 103px 59px rgba(0,0,0,0.75);
+
+}
+.nosotros01 h2{
+    font-weight: bold;
+
+}
+.nosotros01 span{
+    color: orange;
+    font-weight: bold;
+}
+.nosotrosinfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    border: 10px orange double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgb(30, 30, 30);
+}
+.nosotrosinfo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px orange;
+    border: 5px orange solid;
+}
+.nosotrosinfo img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+.nosotrosinfo h4{
+    margin: 0;
+    padding-top: 20px;
+    font-size: medium;
+    color: orange;
+    font-weight: bold;
+
+}
+.nosotrosinfo p{
+    margin: 0;
+    padding: 20px;
+    color: orange;
+}
+.containerinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* seccion Nosotros */
+
+/* seccion Contacto */
+
+
+.minicaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px;
+    background-color: rgb(30, 30, 30);
+    padding: 20px;
+    color: whitesmoke;
+    border-top: 10px orange double;
+    border-bottom: 10px orange double;
+    width: 100%;
+
+
+}
+
+.minicaja2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px;
+    background-color: rgb(30, 30, 30);
+    padding: 20px 0px 20px;
+    color: whitesmoke;
+    width: 100%;
+    border-top: 10px orange double;
+    border-bottom: 10px double orange;
+    margin-bottom: 20px;
+}
+.formulario div{
+    padding: 5px;
+
+}
+.formulario label{
+    width: 80px;
+
+}
+form div{
+    display: flex;
+}
+textarea{
+    width: 70%;
+}
+.formulario input[type="submit"]{
+    background-color: rgb(255, 175, 28);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 2px orange;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover{
+    transform: scale(1.01);
+    transition: all .2s ease;
+    background-color: black;
+    color: whitesmoke;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.minicaja2 ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+.minicaja2 li{
+    font-size: 40px;
+    cursor: pointer;
+}
+.minicaja2 li:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+    color:  orange;
+}
+a{
+    color: orange;
+}
+a:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+    color:  orange;
+}
+
+/* seccion Contacto */
+
+/* seccion Clientes */
+.cajaclientes{
+    padding: 40px 0px 0px;
+    margin: 0;
+}
+.cajaclientes h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.cliente{
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    border-bottom: 10px double orange;
+}
+.cajaimg{
+    padding-bottom: 20px;
+}
+.cliente img{
+    border-radius: 50%;
+}
+/* seccion Clientes */
+
+/* Fin Main */
+
+
+
+/* Footer Style */
+footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background-color: rgb(30, 30, 30);
+    margin-bottom: 4em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: small;
+    color: whitesmoke;
+    font-style: italic;
+    padding-bottom: 1.5em;
+}
+footer .contactoinfo p{
+    margin: 0;
+}
+footer .copyright{
+    display: flex;
+    justify-content: right;
+
+}
+footer .copyright p{
+    margin-bottom: 0;
+}
+
+/* Footer Style */
+
+/* Media */
+@media (min-width: 1007px){
+/* Header Style */
+header{
+    display: none;
+}
+/* Header Style */
+
+/* Barra de Navegacion */
+nav{
+    position: sticky;
+    top: 0;
+}
+nav img{
+    padding-top: 20px;
+}
+/* Barra de Navegacion */
+
+/* Carrusel */
+.cimg{
+    height: 500px;
+    object-fit: cover;
+
+}
+/* Carrusel */
+
+/* Margenes */
+.presentacion{
+    margin-top: 40px;
+}
+.conocenos{
+    margin-top: 50px;
+}
+/* Margenes */
+
+
+/* Trabajos Style */
+.trabajos{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+/* Trabajos Style */
+
+/* Conocenos Style */
+.conocenos{
+    align-items: baseline;
+}
+/* Conocenos Style */
+
+/* Contacto Style */
+.cajacontactos{
+    display: flex;
+    margin-bottom: 20px;
+}
+.minicaja{
+    align-items: flex-start;
+}
+form div{
+    flex-direction: column;
+    width: 1000px;
+}
+div input{
+    width: 100%;
+}
+div label{
+    padding-bottom: 10px;
+}
+div textarea{
+    width: 100%;
+    height: 200px;
+}
+.boton{
+    width: 300px;
+}
+.minicaja2{
+    margin-bottom: 0;
+}
+.minicaja2 ul{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+/* Contacto Style */
+
+/* footer */
+footer{
+    margin: 0;
+    padding-bottom: 8px;
+}
+/* footer */
+
+
+}
+/* Media */
