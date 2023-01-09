@@ -395,7 +395,40 @@ a:hover{
     border-radius: 50%;
 }
 /* seccion Clientes */
+/* seccion Novedades */
+.novtitulo{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    border-bottom: 10px double orange;
+}
 
+
+.novedades{
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px 5px rgb(30, 30, 30);
+    border-bottom: 10px double orange;
+}
+.novedades h3{
+    padding-top: 20px;
+    color:  orange;
+    border-bottom: 4px solid orange;
+    margin-bottom: 20px;
+}
+/* seccion Novedades */
 /* Fin Main */
 
 

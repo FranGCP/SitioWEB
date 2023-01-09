@@ -1,0 +1,8 @@
+header{
+    display: block;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
