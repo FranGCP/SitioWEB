@@ -9,6 +9,9 @@ body{
     padding: 0;
     background-color: rgb(255, 175, 28);
 }
+h2{
+    color: white;
+}
 /* Fin Reglas Generales */
 
 /* Header */
