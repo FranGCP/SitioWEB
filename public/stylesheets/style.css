@@ -205,7 +205,7 @@ main{
 .nosotros01{
     width: 100%;
     display: flex;
-    background-image: url(https://via.placeholder.com/1500);
+    background-image: url(/images/Fondo1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,6 +246,9 @@ main{
 .nosotrosinfo img:hover{
     transform: scale(1.1);
     transition: all .3s ease;
+}
+.containerimg{
+    width: 50%;
 }
 .nosotrosinfo h4{
     margin: 0;
@@ -390,10 +393,19 @@ a:hover{
 }
 .cajaimg{
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaimg img {
+    width: 200px;
+    height: 200px;
+    
 }
 .cliente img{
     border-radius: 50%;
 }
+
 /* seccion Clientes */
 /* seccion Novedades */
 .novtitulo{
